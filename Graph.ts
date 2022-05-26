@@ -6,7 +6,7 @@ export class Graph {
     }
     DFS(): Array<number> {
         let stack : Array<number> = [];
-        let vertices : Array<Boolean> = Array(this.matrix.length);
+        let vertices : Array<boolean> = Array(this.matrix.length);
         let traversedVertices = Array<number>();
         vertices.fill(false);
         vertices[0] = true;
@@ -30,7 +30,7 @@ export class Graph {
     }
     BFS(): Array<number> {
         let queue = new Array<number>();
-        let vertices = new Array<Boolean>(this.matrix.length);
+        let vertices = new Array<boolean>(this.matrix.length);
         let traversedVertices = new Array<number>();
         vertices.fill(false);
         vertices[0] = true;
